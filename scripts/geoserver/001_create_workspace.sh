@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source scripts/000_shared.sh
+source scripts/helpers.sh
 
 JSON="
 {
