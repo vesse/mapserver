@@ -15,6 +15,15 @@ JSON="
         \"yk_4500k_karttanimipiste8000\",
         \"yk_4500k_tieviiva8000\"
       ]
+    },
+    \"styles\": {
+      \"style\": [
+        \"polygon\",
+        \"yk_water\",
+        \"line\",
+        \"point\",
+        \"yk_roads\"
+      ]
     }
   }
 }
