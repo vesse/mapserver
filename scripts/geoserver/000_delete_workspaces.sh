@@ -16,3 +16,18 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
       "${ws_uri}?recurse=true"
   done
 fi
+
+read -p "Removing all styles from GeoServer. Are you sure? [y/N] " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  styles=`curl -s \
+    -u ${GEOSERVER_USERNAME}:${GEOSERVER_PASSWORD} \
+    ${GEOSERVER_URL}rest/styles.json \
+    | jq -r '.styles.style | map(.href) | join(" ")'`
+
+  # for ws_uri in ${workspaces}; do
+  #   curl -X DELETE \
+  #     -u ${GEOSERVER_USERNAME}:${GEOSERVER_PASSWORD} \
+  #     "${ws_uri}?recurse=true"
+  # done
+fi

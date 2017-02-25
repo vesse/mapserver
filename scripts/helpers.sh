@@ -27,10 +27,10 @@ function rsyncKapsi {
   rsyncFolder=${2}
 
   mkdir -p "${folder}"
-  pushd "${folder}"
+  pushd "${folder}" > /dev/null
   rsync -arPv "tiedostot.kartat.kapsi.fi::mml/${rsyncFolder}" .
   find . -name '*.zip' -exec unzip -o '{}' -d unzipped \;
-  popd
+  popd > /dev/null
 }
 
 # Import given files from given folder
@@ -45,7 +45,7 @@ function importData {
   shift
   files=("${@}")
 
-  pushd "${folder}"
+  pushd "${folder}" > /dev/null
 
   yearpattern='(.*)_[0-9]{4}_(.*)'
 
@@ -71,5 +71,5 @@ function importData {
     fi
   done
 
-  popd
+  popd > /dev/null
 }
