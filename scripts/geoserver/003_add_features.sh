@@ -3,7 +3,6 @@
 source scripts/helpers.sh
 
 features=(
-  kuntajako_4500k_suomenmaakuntajako_4500k
   yk_4500k_hallintoalueraja
   yk_4500k_taajamapiste2000
   yk_4500k_taajamapiste4500

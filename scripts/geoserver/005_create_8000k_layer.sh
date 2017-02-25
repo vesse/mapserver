@@ -9,7 +9,7 @@ JSON="
     \"title\": \"Finland 8000k\",
     \"layers\": {
       \"layer\": [
-        \"kuntajako_4500k_suomenmaakuntajako_4500k\",
+        \"yk_4500k_hallintoalueraja\",
         \"yk_4500k_vesialue\",
         \"yk_4500k_vesiviiva8000\",
         \"yk_4500k_taajamapiste8000\",
