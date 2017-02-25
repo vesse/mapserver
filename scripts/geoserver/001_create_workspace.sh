@@ -11,4 +11,4 @@ JSON="
 "
 
 echo "Create workspace ${WORKSPACE_NAME}:"
-echo "  `post "${JSON}" "rest/workspaces"`"
+echo "  `postGeoserver "${JSON}" "rest/workspaces"`"

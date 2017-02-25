@@ -1,17 +1,17 @@
 #!/bin/bash
 
-source config
+source scripts/helpers.sh
 
-pushd data/001_yleiskartta_4500k/unzipped
+files=(
+  HallintoalueRaja.shp
+  RautatieViiva.shp
+  TieViiva8000.shp
+  TieViiva4500.shp
+  TieViiva2000.shp
+  VesiAlue.shp
+  VesiViiva8000.shp
+  VesiViiva4500.shp
+  VesiViiva2000.shp
+)
 
-for f in *.shp; do
-  table_name="yk_4500k_${f%.*}"
-  table_name="${table_name,,}"
-
-  PG_USE_COPY=YES ogr2ogr \
-    -f "PostgreSQL" PG:"${PGCONN}" \
-    -s_srs "EPSG:3067" \
-    -t_srs "EPSG:3067" \
-    -append \
-    -nln ${table_name} ${f}
-done
+importData "data/001_yleiskartta_4500k/unzipped" "yk_4500k" "${files[@]}"

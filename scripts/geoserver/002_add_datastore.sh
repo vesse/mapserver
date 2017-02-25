@@ -19,4 +19,4 @@ JSON="
 "
 
 echo "Add data store ${DATASTORE_NAME}:"
-echo "  `post "${JSON}" "rest/workspaces/${WORKSPACE_NAME}/datastores"`"
+echo "  `postGeoserver "${JSON}" "rest/workspaces/${WORKSPACE_NAME}/datastores"`"
