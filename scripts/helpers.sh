@@ -47,10 +47,17 @@ function importData {
 
   pushd "${folder}"
 
+  yearpattern='(.*)_[0-9]{4}_(.*)'
+
   for f in ${files[@]}; do
     if [ -f ${f} ]; then
       table_name="${table_basename}_${f%.*}"
       table_name="${table_name,,}"
+
+      # Remove _year_ which is at least in municipality limits
+      while [[ $table_name =~ $yearpattern ]]; do
+        table_name=${BASH_REMATCH[1]}_${BASH_REMATCH[2]}
+      done
 
       PG_USE_COPY=YES ogr2ogr \
         -f "PostgreSQL" PG:"${PGCONN}" \

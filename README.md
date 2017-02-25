@@ -1,5 +1,11 @@
 # Finnish GeoServer map
 
+## Requirements
+
+```bash
+sudo apt-get install postgresql postgis curl wget jq
+```
+
 ## Database
 
 Create a user and a database
