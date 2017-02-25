@@ -12,9 +12,9 @@ files=(
   VesiViiva8000.shp
   VesiViiva4500.shp
   VesiViiva2000.shp
-  KarttanimiPiste8000.shp
-  KarttanimiPiste4500.shp
-  KarttanimiPiste2000.shp
+  TaajamaPiste8000.shp
+  TaajamaPiste4500.shp
+  TaajamaPiste2000.shp
 )
 
 echo "Import yleiskartta 4500k"

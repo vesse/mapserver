@@ -1,0 +1,8 @@
+#!/bin/bash
+
+scripts/geoserver/000_delete_workspaces.sh
+scripts/geoserver/001_create_workspace.sh
+scripts/geoserver/002_add_datastore.sh
+scripts/geoserver/003_add_features.sh
+scripts/geoserver/004_add_styles.sh
+scripts/geoserver/005_create_4500k_layer.sh
