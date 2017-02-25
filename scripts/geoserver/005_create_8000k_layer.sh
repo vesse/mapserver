@@ -5,8 +5,8 @@ source scripts/helpers.sh
 JSON="
 {
   \"layerGroup\": {
-    \"name\": \"Finland_4500k\",
-    \"title\": \"Finland 4500k\",
+    \"name\": \"Finland_8000k\",
+    \"title\": \"Finland 8000k\",
     \"layers\": {
       \"layer\": [
         \"kuntajako_4500k_suomenmaakuntajako_4500k\",
