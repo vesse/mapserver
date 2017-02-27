@@ -8,13 +8,25 @@
   <NamedLayer>
     <Name></Name>
     <UserStyle>
-      <Title>Karttanimi</Title>
+      <Title>Paikannimi</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>kn_city_labels</Name>
+          <Name>city_labels</Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+                <ogc:Literal>8000000</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>kielikoodi</ogc:PropertyName>
+                <ogc:Literal>fin</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
           <TextSymbolizer>
             <Label>
-              <ogc:PropertyName>karttanimiteksti</ogc:PropertyName>
+              <ogc:PropertyName>kirjoitusasu</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
@@ -25,7 +37,7 @@
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
+                  <AnchorPointX>0.5</AnchorPointX>
                   <AnchorPointY>0</AnchorPointY>
                 </AnchorPoint>
                 <Displacement>
@@ -39,7 +51,7 @@
             </Fill>
             <Priority>1000</Priority>
             <VendorOption name="group">yes</VendorOption>
-            <VendorOption name="spaceAround">25</VendorOption>
+            <VendorOption name="spaceAround">5</VendorOption>
           </TextSymbolizer>
         </Rule>
       </FeatureTypeStyle>

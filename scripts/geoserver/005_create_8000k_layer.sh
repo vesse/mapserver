@@ -14,7 +14,7 @@ JSON="
         \"yk_4500k_tieviiva8000\",
         \"yk_4500k_hallintoalueraja\",
         \"yk_4500k_taajamapiste8000\",
-        \"kn_4500k_karttanimi_4500\"
+        \"paikannimi\"
       ]
     },
     \"styles\": {
