@@ -47,11 +47,15 @@ function importData {
 
   pushd "${folder}" > /dev/null
 
+  if [ ! -z "${table_basename}" ]; then
+    table_basename="${table_basename}_"
+  fi
+
   yearpattern='(.*)_[0-9]{4}_(.*)'
 
   for f in ${files[@]}; do
     if [ -f ${f} ]; then
-      table_name="${table_basename}_${f%.*}"
+      table_name="${table_basename}${f%.*}"
       table_name="${table_name,,}"
 
       # Remove _year_ which is at least in municipality limits

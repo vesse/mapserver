@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# http://www.maanmittauslaitos.fi/sites/default/files/yleiskartta_1milj_koodit.pdf
+
 source scripts/helpers.sh
 
 files=(
