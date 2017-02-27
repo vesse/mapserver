@@ -13,7 +13,7 @@
 
         <Rule>
           <Name>city_labels_8000k</Name>
-          <MinScaleDenominator>4000000</MinScaleDenominator>
+          <MinScaleDenominator>8000000</MinScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
@@ -54,7 +54,7 @@
         <Rule>
           <Name>city_labels_4000k_big_cities</Name>
           <MinScaleDenominator>2000000</MinScaleDenominator>
-          <MaxScaleDenominator>4000000</MaxScaleDenominator>
+          <MaxScaleDenominator>8000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
