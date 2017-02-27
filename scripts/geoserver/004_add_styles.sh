@@ -9,6 +9,7 @@ styles['yk_water_area']='yk_water_area.sld'
 styles['yk_water_line']='yk_water_line.sld'
 styles['yk_borders']='yk_borders.sld'
 styles['yk_city_marker']='yk_city_marker.sld'
+styles['kn_city_labels']='kn_city_labels.sld'
 
 function addStyle {
   file=${1}

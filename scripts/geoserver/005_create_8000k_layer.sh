@@ -13,7 +13,8 @@ JSON="
         \"yk_4500k_vesiviiva8000\",
         \"yk_4500k_tieviiva8000\",
         \"yk_4500k_hallintoalueraja\",
-        \"yk_4500k_taajamapiste8000\"
+        \"yk_4500k_taajamapiste8000\",
+        \"kn_4500k_karttanimi_4500\"
       ]
     },
     \"styles\": {
@@ -22,7 +23,8 @@ JSON="
         \"yk_water_line\",
         \"yk_roads\",
         \"yk_borders\",
-        \"yk_city_marker\"
+        \"yk_city_marker\",
+        \"kn_city_labels\"
       ]
     }
   }

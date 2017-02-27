@@ -8,7 +8,7 @@
   <NamedLayer>
     <Name>Yleiskartta borders</Name>
     <UserStyle>
-      <Title>Yleiskartta boerders</Title>
+      <Title>Yleiskartta borders</Title>
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_country_border_water</Name>
