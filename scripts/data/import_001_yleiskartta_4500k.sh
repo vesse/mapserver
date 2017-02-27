@@ -19,3 +19,5 @@ files=(
 
 echo "Import yleiskartta 4500k"
 importData "data/001_yleiskartta_4500k/unzipped" "yk_4500k" "${files[@]}"
+
+execSql 'CREATE INDEX yk_4500k_hallintoalueraja_kohdeluokk_idx ON yk_4500k_hallintoalueraja(kohdeluokk)'

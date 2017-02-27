@@ -6,6 +6,7 @@ declare -A styles
 
 styles['yk_roads']='yk_roads.sld'
 styles['yk_water']='yk_water.sld'
+styles['yk_borders']='yk_borders.sld'
 
 function addStyle {
   file=${1}

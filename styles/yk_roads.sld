@@ -12,13 +12,13 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_road</Name>
-            <LineSymbolizer>
-              <Stroke>
-                <CssParameter name="stroke">#CC8822</CssParameter>
-                <CssParameter name="stroke-width">0.25</CssParameter>
-                <CssParameter name="stroke-linejoin">bevel</CssParameter>
-                <CssParameter name="stroke-linecap">square</CssParameter>
-              </Stroke>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#CC8822</CssParameter>
+              <CssParameter name="stroke-width">0.25</CssParameter>
+              <CssParameter name="stroke-linejoin">bevel</CssParameter>
+              <CssParameter name="stroke-linecap">square</CssParameter>
+            </Stroke>
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>

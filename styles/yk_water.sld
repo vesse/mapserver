@@ -12,10 +12,10 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_water</Name>
-            <PolygonSymbolizer>
-              <Fill>
-                <CssParameter name="fill">#5badd9</CssParameter>
-              </Fill>
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#5badd9</CssParameter>
+            </Fill>
           </PolygonSymbolizer>
         </Rule>
       </FeatureTypeStyle>

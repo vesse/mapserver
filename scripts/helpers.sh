@@ -73,3 +73,8 @@ function importData {
 
   popd > /dev/null
 }
+
+function execSql {
+  command=${1}
+  psql -h ${DATABASE_HOST} -p ${DATABASE_PORT} -U ${DATABASE_USERNAME} -c "${command}" ${DATABASE_NAME}
+}

@@ -9,20 +9,20 @@ JSON="
     \"title\": \"Finland 8000k\",
     \"layers\": {
       \"layer\": [
-        \"yk_4500k_hallintoalueraja\",
         \"yk_4500k_vesialue\",
         \"yk_4500k_vesiviiva8000\",
         \"yk_4500k_taajamapiste8000\",
-        \"yk_4500k_tieviiva8000\"
+        \"yk_4500k_tieviiva8000\",
+        \"yk_4500k_hallintoalueraja\"
       ]
     },
     \"styles\": {
       \"style\": [
-        \"polygon\",
         \"yk_water\",
         \"line\",
         \"point\",
-        \"yk_roads\"
+        \"yk_roads\",
+        \"yk_borders\"
       ]
     }
   }
