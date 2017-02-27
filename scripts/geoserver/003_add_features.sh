@@ -15,7 +15,6 @@ features=(
   yk_4500k_vesiviiva2000
   yk_4500k_vesiviiva4500
   yk_4500k_vesiviiva8000
-  kn_4500k_karttanimi_4500
   paikannimi
 )
 

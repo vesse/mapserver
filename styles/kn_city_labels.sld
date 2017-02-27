@@ -13,16 +13,10 @@
         <Rule>
           <Name>city_labels</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
-                <ogc:Literal>8000000</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>kielikoodi</ogc:PropertyName>
-                <ogc:Literal>fin</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+              <ogc:Literal>8000000</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <TextSymbolizer>
             <Label>
@@ -42,7 +36,7 @@
                 </AnchorPoint>
                 <Displacement>
                   <DisplacementX>0</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
+                  <DisplacementY>5</DisplacementY>
                 </Displacement>
               </PointPlacement>
             </LabelPlacement>

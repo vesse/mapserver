@@ -37,10 +37,14 @@ function rsyncKapsi {
 #
 # param $1 Source folder
 # param $2 Table base name
-# param $3 List of files to import
+# param $3 Filter
+# param $4 List of files to import
 function importData {
   folder=${1}
   table_basename=${2}
+  filter=${3}
+
+  shift
   shift
   shift
   files=("${@}")
@@ -68,6 +72,7 @@ function importData {
         -s_srs "EPSG:3067" \
         -t_srs "EPSG:3067" \
         -append \
+        -where "${filter}" \
         -nln ${table_name} ${f}
     else
       (>&2 echo "ERROR: File ${f} does not exist")
