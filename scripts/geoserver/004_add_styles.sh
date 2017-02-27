@@ -5,8 +5,10 @@ source scripts/helpers.sh
 declare -A styles
 
 styles['yk_roads']='yk_roads.sld'
-styles['yk_water']='yk_water.sld'
+styles['yk_water_area']='yk_water_area.sld'
+styles['yk_water_line']='yk_water_line.sld'
 styles['yk_borders']='yk_borders.sld'
+styles['yk_city_marker']='yk_city_marker.sld'
 
 function addStyle {
   file=${1}

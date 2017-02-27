@@ -11,18 +11,18 @@ JSON="
       \"layer\": [
         \"yk_4500k_vesialue\",
         \"yk_4500k_vesiviiva8000\",
-        \"yk_4500k_taajamapiste8000\",
         \"yk_4500k_tieviiva8000\",
-        \"yk_4500k_hallintoalueraja\"
+        \"yk_4500k_hallintoalueraja\",
+        \"yk_4500k_taajamapiste8000\"
       ]
     },
     \"styles\": {
       \"style\": [
-        \"yk_water\",
-        \"line\",
-        \"point\",
+        \"yk_water_area\",
+        \"yk_water_line\",
         \"yk_roads\",
-        \"yk_borders\"
+        \"yk_borders\",
+        \"yk_city_marker\"
       ]
     }
   }

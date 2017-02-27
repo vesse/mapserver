@@ -6,16 +6,16 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta roads</Name>
+    <Name>Yleiskartta water line</Name>
     <UserStyle>
-      <Title>Yleiskartta roads</Title>
+      <Title>Yleiskartta water line</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_road</Name>
+          <Name>yk_water_line</Name>
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#CC8822</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
+              <CssParameter name="stroke">#5badd9</CssParameter>
+              <CssParameter name="stroke-width">0.25</CssParameter>
               <CssParameter name="stroke-linejoin">bevel</CssParameter>
               <CssParameter name="stroke-linecap">square</CssParameter>
             </Stroke>
