@@ -12,7 +12,7 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_city_marker_big</Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+          <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
               <ogc:Literal>7</ogc:Literal>
@@ -38,7 +38,7 @@
         </Rule>
         <Rule>
           <Name>yk_city_marker_middle</Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+          <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
               <ogc:Literal>6</ogc:Literal>
@@ -64,7 +64,7 @@
         </Rule>
         <Rule>
           <Name>yk_city_marker_small</Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+          <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
               <ogc:Literal>5</ogc:Literal>

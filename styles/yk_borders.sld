@@ -12,7 +12,7 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_country_border_water</Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+          <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
               <ogc:Literal>82100</ogc:Literal>
@@ -30,7 +30,7 @@
         </Rule>
         <Rule>
           <Name>yk_country_border_land</Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+          <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
               <ogc:Literal>84111</ogc:Literal>
@@ -47,15 +47,17 @@
         </Rule>
         <Rule>
           <Name>yk_province_border_land</Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:Function name="in2">
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
                 <ogc:Literal>84112</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
                 <ogc:Literal>84115</ogc:Literal>
-              </ogc:Function>
-              <ogc:Literal>true</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
           </ogc:Filter>
           <LineSymbolizer>
             <Stroke>
