@@ -6,12 +6,13 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta city marker</Name>
+    <Name>Yleiskartta city marker 8000k</Name>
     <UserStyle>
-      <Title>Yleiskartta city marker</Title>
+      <Title>Yleiskartta city marker 8000k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_city_marker_big</Name>
+          <Name>yk_city_marker_big_8000k</Name>
+          <MinScaleDenominator>8000000</MinScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
@@ -37,7 +38,8 @@
           </PointSymbolizer>
         </Rule>
         <Rule>
-          <Name>yk_city_marker_middle</Name>
+          <Name>yk_city_marker_middle_8000k</Name>
+          <MinScaleDenominator>8000000</MinScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
@@ -63,7 +65,8 @@
           </PointSymbolizer>
         </Rule>
         <Rule>
-          <Name>yk_city_marker_small</Name>
+          <Name>yk_city_marker_small_8000k</Name>
+          <MinScaleDenominator>8000000</MinScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>

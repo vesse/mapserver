@@ -6,12 +6,14 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta roads</Name>
+    <Name>Yleiskartta roads 4500k</Name>
     <UserStyle>
-      <Title>Yleiskartta roads</Title>
+      <Title>Yleiskartta roads 4500k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_road</Name>
+          <Name>yk_road_4500k</Name>
+          <MinScaleDenominator>4000000</MinScaleDenominator>
+          <MaxScaleDenominator>8000000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#CC8822</CssParameter>

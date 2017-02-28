@@ -4,11 +4,19 @@ source scripts/helpers.sh
 
 declare -A styles
 
-styles['yk_roads']='yk_roads.sld'
+styles['yk_roads_8000k']='yk_roads_8000k.sld'
+styles['yk_roads_4500k']='yk_roads_4500k.sld'
+
 styles['yk_water_area']='yk_water_area.sld'
-styles['yk_water_line']='yk_water_line.sld'
+
+styles['yk_water_line_8000k']='yk_water_line_8000k.sld'
+styles['yk_water_line_4500k']='yk_water_line_4500k.sld'
+
 styles['yk_borders']='yk_borders.sld'
-styles['yk_city_marker']='yk_city_marker.sld'
+
+styles['yk_city_marker_8000k']='yk_city_marker_8000k.sld'
+styles['yk_city_marker_4500k']='yk_city_marker_4500k.sld'
+
 styles['kn_city_labels']='kn_city_labels.sld'
 
 function addStyle {

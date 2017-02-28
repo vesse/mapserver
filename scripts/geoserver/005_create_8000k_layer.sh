@@ -5,8 +5,8 @@ source scripts/helpers.sh
 JSON="
 {
   \"layerGroup\": {
-    \"name\": \"Finland_8000k\",
-    \"title\": \"Finland 8000k\",
+    \"name\": \"Finland:8000k\",
+    \"title\": \"Finland:8000k\",
     \"layers\": {
       \"layer\": [
         \"yk_4500k_vesialue\",
@@ -20,10 +20,10 @@ JSON="
     \"styles\": {
       \"style\": [
         \"yk_water_area\",
-        \"yk_water_line\",
-        \"yk_roads\",
+        \"yk_water_line_8000k\",
+        \"yk_roads_8000k\",
         \"yk_borders\",
-        \"yk_city_marker\",
+        \"yk_city_marker_8000k\",
         \"kn_city_labels\"
       ]
     }
@@ -31,5 +31,5 @@ JSON="
 }
 "
 
-echo "Add 4500k layer group"
+echo "Add 8000k layer group"
 echo "  `postGeoserver "${JSON}" "rest/workspaces/${WORKSPACE_NAME}/layergroups"`"

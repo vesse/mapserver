@@ -12,6 +12,7 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_water_line</Name>
+          <MinScaleDenominator>8000000</MinScaleDenominator>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#5badd9</CssParameter>
