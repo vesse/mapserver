@@ -12,6 +12,7 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_water_area</Name>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#5badd9</CssParameter>

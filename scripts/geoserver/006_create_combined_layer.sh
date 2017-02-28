@@ -17,6 +17,10 @@ JSON="
         {
           \"@type\": \"layerGroup\",
           \"name\": \"Finland:Finland:4500k\"
+        },
+        {
+          \"@type\": \"layerGroup\",
+          \"name\": \"Finland:Finland:2000k\"
         }
       ]
     }

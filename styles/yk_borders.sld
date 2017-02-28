@@ -12,6 +12,7 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_country_border_water</Name>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
@@ -30,6 +31,7 @@
         </Rule>
         <Rule>
           <Name>yk_country_border_land</Name>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
@@ -47,6 +49,7 @@
         </Rule>
         <Rule>
           <Name>yk_province_border_land</Name>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <ogc:Filter>
             <ogc:Or>
               <ogc:PropertyIsEqualTo>
