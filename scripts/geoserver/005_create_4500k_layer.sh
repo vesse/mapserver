@@ -15,6 +15,7 @@ JSON="
       \"layer\": [
         \"yk_4500k_vesiviiva4500\",
         \"yk_4500k_tieviiva4500\",
+        \"yk_4500k_rautatieviiva\",
         \"yk_4500k_taajamapiste4500\",
       ]
     },
@@ -22,6 +23,7 @@ JSON="
       \"style\": [
         \"yk_water_line_4500k\",
         \"yk_roads_4500k\",
+        \"yk_railroads_4500k\",
         \"yk_city_marker_4500k\",
       ]
     }

@@ -8,6 +8,8 @@ styles['yk_roads_8000k']='yk_roads_8000k.sld'
 styles['yk_roads_4500k']='yk_roads_4500k.sld'
 styles['yk_roads_2000k']='yk_roads_2000k.sld'
 
+styles['yk_railroads_4500k']='yk_railroads_4500k.sld'
+
 styles['yk_water_area']='yk_water_area.sld'
 
 styles['yk_water_line_8000k']='yk_water_line_8000k.sld'
