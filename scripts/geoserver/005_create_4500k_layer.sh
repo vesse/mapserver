@@ -2,6 +2,10 @@
 
 source scripts/helpers.sh
 
+# Note: water area, borders and city labels are from 8000k layer since
+# there are not different scale data for those. City labels rise on top
+# apparently regardless of drawing order which is nice for reuse
+
 JSON="
 {
   \"layerGroup\": {
@@ -16,12 +20,9 @@ JSON="
     },
     \"styles\": {
       \"style\": [
-        \"yk_water_area\",
         \"yk_water_line_4500k\",
         \"yk_roads_4500k\",
-        \"yk_borders\",
         \"yk_city_marker_4500k\",
-        \"kn_city_labels\"
       ]
     }
   }
