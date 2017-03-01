@@ -15,6 +15,17 @@ features=(
   yk_4500k_vesiviiva2000
   yk_4500k_vesiviiva4500
   yk_4500k_vesiviiva8000
+  yk_1000k_hallintoalueraja
+  yk_1000k_korkeusalue
+  yk_1000k_maaalue
+  yk_1000k_liikennealue
+  yk_1000k_peltoalue
+  yk_1000k_rautatieviiva
+  yk_1000k_taajamaalue
+  yk_1000k_taajamapiste
+  yk_1000k_tieviiva
+  yk_1000k_vesialue
+  yk_1000k_vesiviiva
   paikannimi
 )
 

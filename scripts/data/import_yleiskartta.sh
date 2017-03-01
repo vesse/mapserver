@@ -4,7 +4,7 @@
 
 source scripts/helpers.sh
 
-files=(
+files4500k=(
   HallintoalueRaja.shp
   RautatieViiva.shp
   TieViiva8000.shp
@@ -19,11 +19,28 @@ files=(
   TaajamaPiste2000.shp
 )
 
+files1000k=(
+  HallintoalueRaja.shp
+  KorkeusAlue.shp
+  MaaAlue.shp
+  LiikenneAlue.shp
+  PeltoAlue.shp
+  RautatieViiva.shp
+  TaajamaAlue.shp
+  TaajamaPiste.shp
+  TieViiva.shp
+  VesiAlue.shp
+  VesiViiva.shp
+)
+
 echo "Import yleiskartta 4500k"
-importData "data/yleiskartta_4500k/unzipped" "yk_4500k" "" "${files[@]}"
+importData "data/yleiskartta_4500k/unzipped" "yk_4500k" "" "${files4500k[@]}"
 
 execSql 'CREATE INDEX yk_4500k_hallintoalueraja_kohdeluokk_idx ON yk_4500k_hallintoalueraja(kohdeluokk)'
 
 execSql 'CREATE INDEX yk_4500k_taajamapiste8000_asukasluok_idx ON yk_4500k_taajamapiste8000(asukasluok)'
 execSql 'CREATE INDEX yk_4500k_taajamapiste4500_asukasluok_idx ON yk_4500k_taajamapiste4500(asukasluok)'
 execSql 'CREATE INDEX yk_4500k_taajamapiste2000_asukasluok_idx ON yk_4500k_taajamapiste2000(asukasluok)'
+
+echo "Import yleiskartta 1000k"
+importData "data/yleiskartta_1000k/unzipped" "yk_1000k" "" "${files1000k[@]}"
