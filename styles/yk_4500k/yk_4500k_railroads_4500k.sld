@@ -11,7 +11,7 @@
       <Title>Yleiskartta railroads 4500k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_railroad_4500k</Name>
+          <Name>yk_railroad</Name>
           <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>8000000</MaxScaleDenominator>
           <LineSymbolizer>

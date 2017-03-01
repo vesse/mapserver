@@ -11,7 +11,7 @@
       <Title>Yleiskartta water line 4500k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_water_line_4500k</Name>
+          <Name>yk_water_line</Name>
           <MinScaleDenominator>4000000</MinScaleDenominator>
           <MaxScaleDenominator>8000000</MaxScaleDenominator>
           <LineSymbolizer>

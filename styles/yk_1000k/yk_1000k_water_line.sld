@@ -6,13 +6,21 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta water line 8000k</Name>
+    <Name>Yleiskartta water line 1000k</Name>
     <UserStyle>
-      <Title>Yleiskartta water line 8000k</Title>
+      <Title>Yleiskartta water line 1000k</Title>
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_water_line</Name>
-          <MinScaleDenominator>8000000</MinScaleDenominator>
+          <MinScaleDenominator>500000</MinScaleDenominator>
+          <MaxScaleDenominator>2000000</MaxScaleDenominator>
+          <ogc:Filter>
+            <ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyName>kohdeluokk</ogc:PropertyName>
+              <!-- Less than 5m wide stream -->
+              <ogc:Literal>36312</ogc:Literal>
+            </ogc:PropertyIsNotEqualTo>
+          </ogc:Filter>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#5badd9</CssParameter>

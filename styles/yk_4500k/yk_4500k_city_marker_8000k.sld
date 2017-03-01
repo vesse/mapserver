@@ -11,12 +11,13 @@
       <Title>Yleiskartta city marker 8000k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_city_marker_big_8000k</Name>
+          <Name>yk_city_marker_big</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
+              <!-- Over 100k population -->
               <ogc:Literal>7</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -36,15 +37,17 @@
               </Mark>
               <Size>6</Size>
             </Graphic>
+            <Priority>1000</Priority>
           </PointSymbolizer>
         </Rule>
         <Rule>
-          <Name>yk_city_marker_middle_8000k</Name>
+          <Name>yk_city_marker_middle</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
+              <!-- 50k-100k population -->
               <ogc:Literal>6</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -67,12 +70,13 @@
           </PointSymbolizer>
         </Rule>
         <Rule>
-          <Name>yk_city_marker_small_8000k</Name>
+          <Name>yk_city_marker_small</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
+              <!-- 20k-50k population -->
               <ogc:Literal>5</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>

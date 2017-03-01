@@ -9,11 +9,15 @@ JSON="
     \"title\": \"Finland:1000k\",
     \"layers\": {
       \"layer\": [
+        \"yk:1000k:vesialue\",
+        \"yk:1000k:vesiviiva\",
         \"yk:1000k:hallintoalueraja\"
       ]
     },
     \"styles\": {
       \"style\": [
+        \"yk:1000k:water_area\",
+        \"yk:1000k:water_line\",
         \"yk:1000k:borders\"
       ]
     }

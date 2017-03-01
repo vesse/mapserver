@@ -11,7 +11,7 @@
       <Title>Yleiskartta roads 2000k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_road_2000k</Name>
+          <Name>yk_road</Name>
           <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>4000000</MaxScaleDenominator>
           <LineSymbolizer>

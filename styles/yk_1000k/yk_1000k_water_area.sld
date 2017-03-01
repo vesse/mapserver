@@ -6,13 +6,14 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta water area 4500k</Name>
+    <Name>Yleiskartta water area 1000k</Name>
     <UserStyle>
-      <Title>Yleiskartta water area 4500k</Title>
+      <Title>Yleiskartta water area 1000k</Title>
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_water_area</Name>
-          <MinScaleDenominator>2000000</MinScaleDenominator>
+          <MinScaleDenominator>500000</MinScaleDenominator>
+          <MaxScaleDenominator>2000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#5badd9</CssParameter>

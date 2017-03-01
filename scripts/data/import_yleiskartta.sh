@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# http://www.maanmittauslaitos.fi/sites/default/files/yleiskartta_45milj_koodit.pdf
 # http://www.maanmittauslaitos.fi/sites/default/files/yleiskartta_1milj_koodit.pdf
 
 source scripts/helpers.sh
@@ -44,3 +45,6 @@ execSql 'CREATE INDEX yk_4500k_taajamapiste2000_asukasluok_idx ON yk_4500k_taaja
 
 echo "Import yleiskartta 1000k"
 importData "data/yleiskartta_1000k/unzipped" "yk_1000k" "" "${files1000k[@]}"
+
+execSql 'CREATE INDEX yk_1000k_hallintoalueraja_kohdeluokk_idx ON yk_1000k_hallintoalueraja(kohdeluokk)'
+execSql 'CREATE INDEX yk_1000k_vesiviiva_kohdeluokk_idx ON yk_1000k_vesiviiva(kohdeluokk)'
