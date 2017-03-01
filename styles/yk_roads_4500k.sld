@@ -17,7 +17,7 @@
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#CC8822</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
               <CssParameter name="stroke-linejoin">bevel</CssParameter>
               <CssParameter name="stroke-linecap">square</CssParameter>
             </Stroke>

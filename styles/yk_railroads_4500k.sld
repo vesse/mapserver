@@ -17,10 +17,10 @@
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#222222</CssParameter>
-              <CssParameter name="stroke-width">0.5</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
               <CssParameter name="stroke-linejoin">bevel</CssParameter>
               <CssParameter name="stroke-linecap">square</CssParameter>
-              <CssParameter name="stroke-dasharray">2 2</CssParameter>
+              <CssParameter name="stroke-dasharray">4 4</CssParameter>
             </Stroke>
           </LineSymbolizer>
         </Rule>

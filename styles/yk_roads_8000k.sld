@@ -13,6 +13,7 @@
         <Rule>
           <Name>yk_road_8000k</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
+          <MaxScaleDenominator>30000000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#CC8822</CssParameter>

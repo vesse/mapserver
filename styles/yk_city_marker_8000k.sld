@@ -13,6 +13,7 @@
         <Rule>
           <Name>yk_city_marker_big_8000k</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
+          <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
@@ -40,6 +41,7 @@
         <Rule>
           <Name>yk_city_marker_middle_8000k</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
+          <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>
@@ -67,6 +69,7 @@
         <Rule>
           <Name>yk_city_marker_small_8000k</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
+          <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>asukasluok</ogc:PropertyName>

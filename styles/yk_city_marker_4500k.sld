@@ -34,7 +34,7 @@
                   <CssParameter name="stroke-linecap">square</CssParameter>
                 </Stroke>
               </Mark>
-              <Size>6</Size>
+              <Size>8</Size>
             </Graphic>
           </PointSymbolizer>
         </Rule>
