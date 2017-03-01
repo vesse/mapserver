@@ -9,12 +9,12 @@ JSON="
     \"title\": \"Finland:1000k\",
     \"layers\": {
       \"layer\": [
-        \"yk_1000k_hallintoalueraja\"
+        \"yk:1000k:hallintoalueraja\"
       ]
     },
     \"styles\": {
       \"style\": [
-        \"yk_borders\"
+        \"yk:1000k:borders\"
       ]
     }
   }

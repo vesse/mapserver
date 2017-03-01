@@ -22,6 +22,8 @@ styles['yk:4500k:city_marker_8000k']='yk_4500k/yk_4500k_city_marker_8000k.sld'
 styles['yk:4500k:city_marker_4500k']='yk_4500k/yk_4500k_city_marker_4500k.sld'
 styles['yk:4500k:city_marker_2000k']='yk_4500k/yk_4500k_city_marker_2000k.sld'
 
+styles['yk:1000k:borders']='yk_1000k/yk_1000k_borders.sld'
+
 styles['city_labels']='city_labels.sld'
 
 function addStyle {
