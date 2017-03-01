@@ -4,25 +4,25 @@ source scripts/helpers.sh
 
 declare -A styles
 
-styles['yk_roads_8000k']='yk_roads_8000k.sld'
-styles['yk_roads_4500k']='yk_roads_4500k.sld'
-styles['yk_roads_2000k']='yk_roads_2000k.sld'
+styles['yk:4500k:roads_8000k']='yk_4500k/yk_4500k_roads_8000k.sld'
+styles['yk:4500k:roads_4500k']='yk_4500k/yk_4500k_roads_4500k.sld'
+styles['yk:4500k:roads_2000k']='yk_4500k/yk_4500k_roads_2000k.sld'
 
-styles['yk_railroads_4500k']='yk_railroads_4500k.sld'
+styles['yk:4500k:railroads_4500k']='yk_4500k/yk_4500k_railroads_4500k.sld'
 
-styles['yk_water_area']='yk_water_area.sld'
+styles['yk:4500k:water_area']='yk_4500k/yk_4500k_water_area.sld'
 
-styles['yk_water_line_8000k']='yk_water_line_8000k.sld'
-styles['yk_water_line_4500k']='yk_water_line_4500k.sld'
-styles['yk_water_line_2000k']='yk_water_line_2000k.sld'
+styles['yk:4500k:water_line_8000k']='yk_4500k/yk_4500k_water_line_8000k.sld'
+styles['yk:4500k:water_line_4500k']='yk_4500k/yk_4500k_water_line_4500k.sld'
+styles['yk:4500k:water_line_2000k']='yk_4500k/yk_4500k_water_line_2000k.sld'
 
-styles['yk_borders']='yk_borders.sld'
+styles['yk:4500k:borders']='yk_4500k/yk_4500k_borders.sld'
 
-styles['yk_city_marker_8000k']='yk_city_marker_8000k.sld'
-styles['yk_city_marker_4500k']='yk_city_marker_4500k.sld'
-styles['yk_city_marker_2000k']='yk_city_marker_2000k.sld'
+styles['yk:4500k:city_marker_8000k']='yk_4500k/yk_4500k_city_marker_8000k.sld'
+styles['yk:4500k:city_marker_4500k']='yk_4500k/yk_4500k_city_marker_4500k.sld'
+styles['yk:4500k:city_marker_2000k']='yk_4500k/yk_4500k_city_marker_2000k.sld'
 
-styles['kn_city_labels']='kn_city_labels.sld'
+styles['city_labels']='city_labels.sld'
 
 function addStyle {
   file=${1}

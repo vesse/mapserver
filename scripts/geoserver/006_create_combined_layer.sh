@@ -7,20 +7,20 @@ JSON="
   \"layerGroup\": {
     \"name\": \"Finland\",
     \"title\": \"Finland\",
-    \"workspace\": \"Finland\",
+    \"workspace\": \"${WORKSPACE_NAME}\",
     \"publishables\": {
       \"published\": [
         {
           \"@type\": \"layerGroup\",
-          \"name\": \"Finland:Finland:8000k\"
+          \"name\": \"${WORKSPACE_NAME}:Finland:8000k\"
         },
         {
           \"@type\": \"layerGroup\",
-          \"name\": \"Finland:Finland:4500k\"
+          \"name\": \"${WORKSPACE_NAME}:Finland:4500k\"
         },
         {
           \"@type\": \"layerGroup\",
-          \"name\": \"Finland:Finland:2000k\"
+          \"name\": \"${WORKSPACE_NAME}:Finland:2000k\"
         }
       ]
     }

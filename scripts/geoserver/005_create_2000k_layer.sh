@@ -14,16 +14,16 @@ JSON="
     \"title\": \"Finland:2000k\",
     \"layers\": {
       \"layer\": [
-        \"yk_4500k_vesiviiva2000\",
-        \"yk_4500k_tieviiva2000\",
-        \"yk_4500k_taajamapiste2000\"
+        \"yk:4500k:vesiviiva2000\",
+        \"yk:4500k:tieviiva2000\",
+        \"yk:4500k:taajamapiste2000\"
       ]
     },
     \"styles\": {
       \"style\": [
-        \"yk_water_line_2000k\",
-        \"yk_roads_2000k\",
-        \"yk_city_marker_2000k\",
+        \"yk:4500k:water_line_2000k\",
+        \"yk:4500k:roads_2000k\",
+        \"yk:4500k:city_marker_2000k\",
       ]
     }
   }

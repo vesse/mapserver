@@ -9,22 +9,22 @@ JSON="
     \"title\": \"Finland:8000k\",
     \"layers\": {
       \"layer\": [
-        \"yk_4500k_vesialue\",
-        \"yk_4500k_vesiviiva8000\",
-        \"yk_4500k_tieviiva8000\",
-        \"yk_4500k_hallintoalueraja\",
-        \"yk_4500k_taajamapiste8000\",
+        \"yk:4500k:vesialue\",
+        \"yk:4500k:vesiviiva8000\",
+        \"yk:4500k:tieviiva8000\",
+        \"yk:4500k:hallintoalueraja\",
+        \"yk:4500k:taajamapiste8000\",
         \"paikannimi\"
       ]
     },
     \"styles\": {
       \"style\": [
-        \"yk_water_area\",
-        \"yk_water_line_8000k\",
-        \"yk_roads_8000k\",
-        \"yk_borders\",
-        \"yk_city_marker_8000k\",
-        \"kn_city_labels\"
+        \"yk:4500k:water_area\",
+        \"yk:4500k:water_line_8000k\",
+        \"yk:4500k:roads_8000k\",
+        \"yk:4500k:borders\",
+        \"yk:4500k:city_marker_8000k\",
+        \"city_labels\"
       ]
     }
   }
