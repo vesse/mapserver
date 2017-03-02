@@ -9,6 +9,7 @@ JSON="
     \"title\": \"Finland:8000k\",
     \"layers\": {
       \"layer\": [
+        \"yk:4500k:korkeusalue\",
         \"yk:4500k:vesialue\",
         \"yk:4500k:vesiviiva8000\",
         \"yk:4500k:tieviiva8000\",
@@ -19,6 +20,7 @@ JSON="
     },
     \"styles\": {
       \"style\": [
+        \"yk:4500k:elevation\",
         \"yk:4500k:water_area\",
         \"yk:4500k:water_line_8000k\",
         \"yk:4500k:roads_8000k\",
@@ -33,3 +35,4 @@ JSON="
 
 echo "Add 8000k layer group"
 echo "  `postGeoserver "${JSON}" "rest/workspaces/${WORKSPACE_NAME}/layergroups"`"
+

@@ -20,9 +20,12 @@ styles['yk:4500k:city_marker_2000k']='yk_4500k/yk_4500k_city_marker_2000k.sld'
 
 styles['yk:4500k:water_area']='yk_4500k/yk_4500k_water_area.sld'
 styles['yk:4500k:borders']='yk_4500k/yk_4500k_borders.sld'
+styles['yk:4500k:elevation']='yk_4500k/yk_4500k_elevation.sld'
 
 
 styles['yk:1000k:water_area']='yk_1000k/yk_1000k_water_area.sld'
+styles['yk:1000k:farmfield']='yk_1000k/yk_1000k_farmfield.sld'
+styles['yk:1000k:elevation']='yk_1000k/yk_1000k_elevation.sld'
 styles['yk:1000k:water_line']='yk_1000k/yk_1000k_water_line.sld'
 styles['yk:1000k:borders']='yk_1000k/yk_1000k_borders.sld'
 

@@ -18,6 +18,7 @@ files4500k=(
   TaajamaPiste8000.shp
   TaajamaPiste4500.shp
   TaajamaPiste2000.shp
+  KorkeusAlue.shp
 )
 
 files1000k=(
@@ -42,9 +43,12 @@ execSql 'CREATE INDEX yk_4500k_hallintoalueraja_kohdeluokk_idx ON yk_4500k_halli
 execSql 'CREATE INDEX yk_4500k_taajamapiste8000_asukasluok_idx ON yk_4500k_taajamapiste8000(asukasluok)'
 execSql 'CREATE INDEX yk_4500k_taajamapiste4500_asukasluok_idx ON yk_4500k_taajamapiste4500(asukasluok)'
 execSql 'CREATE INDEX yk_4500k_taajamapiste2000_asukasluok_idx ON yk_4500k_taajamapiste2000(asukasluok)'
+execSql 'CREATE INDEX yk_4500k_korkeusalue_korkeus_idx ON yk_4500k_korkeusalue(korkeus)'
+
 
 echo "Import yleiskartta 1000k"
 importData "data/yleiskartta_1000k/unzipped" "yk_1000k" "" "${files1000k[@]}"
 
 execSql 'CREATE INDEX yk_1000k_hallintoalueraja_kohdeluokk_idx ON yk_1000k_hallintoalueraja(kohdeluokk)'
 execSql 'CREATE INDEX yk_1000k_vesiviiva_kohdeluokk_idx ON yk_1000k_vesiviiva(kohdeluokk)'
+execSql 'CREATE INDEX yk_1000k_korkeusalue_korkeus_idx ON yk_1000k_korkeusalue(korkeus)'
