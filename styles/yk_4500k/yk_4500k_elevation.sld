@@ -12,7 +12,7 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_elevation_0m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -22,13 +22,13 @@
           </ogc:Filter>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#a3e185</CssParameter>
+              <CssParameter name="fill">#bff5a3</CssParameter>
             </Fill>
           </PolygonSymbolizer>
         </Rule>
         <Rule>
           <Name>yk_elevation_100m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -44,7 +44,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_200m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -60,7 +60,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_300m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -76,7 +76,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_400m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -92,7 +92,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_500m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -108,7 +108,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_600m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -124,7 +124,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_700m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -140,7 +140,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_800m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -156,7 +156,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_900m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -172,7 +172,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_1000m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -188,7 +188,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_1100m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -204,7 +204,7 @@
         </Rule>
         <Rule>
           <Name>yk_elevation_1200m</Name>
-          <MinScaleDenominator>200000</MinScaleDenominator>
+          <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>17000000</MaxScaleDenominator>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
