@@ -24,7 +24,7 @@ JSON="
         \"yk:4500k:water_area\",
         \"yk:4500k:water_line_8000k\",
         \"yk:4500k:roads_8000k\",
-        \"yk:4500k:borders\",
+        \"yk:4500k:borders_8000k\",
         \"yk:4500k:city_marker_8000k\",
         \"city_labels\"
       ]

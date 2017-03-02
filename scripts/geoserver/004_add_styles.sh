@@ -18,8 +18,11 @@ styles['yk:4500k:city_marker_8000k']='yk_4500k/yk_4500k_city_marker_8000k.sld'
 styles['yk:4500k:city_marker_4500k']='yk_4500k/yk_4500k_city_marker_4500k.sld'
 styles['yk:4500k:city_marker_2000k']='yk_4500k/yk_4500k_city_marker_2000k.sld'
 
+styles['yk:4500k:borders_8000k']='yk_4500k/yk_4500k_borders_8000k.sld'
+styles['yk:4500k:borders_4500k']='yk_4500k/yk_4500k_borders_4500k.sld'
+styles['yk:4500k:borders_2000k']='yk_4500k/yk_4500k_borders_2000k.sld'
+
 styles['yk:4500k:water_area']='yk_4500k/yk_4500k_water_area.sld'
-styles['yk:4500k:borders']='yk_4500k/yk_4500k_borders.sld'
 styles['yk:4500k:elevation']='yk_4500k/yk_4500k_elevation.sld'
 
 
