@@ -6,215 +6,61 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta farm field 1000k</Name>
+    <Name>Yleiskartta elevation 1000k</Name>
     <UserStyle>
-      <Title>Yleiskartta farm field 1000k</Title>
+      <Title>Yleiskartta elevation 1000k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_farm_field_0m</Name>
+          <Name>yk_elevation</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>
           <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>0</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#a3e185</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_100m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>100</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#b0e185</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_200m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>200</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#bce185</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_300m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>300</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#c8e185</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_400m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>400</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#d3e185</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_500m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>500</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#dfe185</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_600m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>600</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#e1d685</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_700m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>700</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#e1cb85</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_800m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>800</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#e1bf85</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_900m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>900</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#e1b385</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_1000m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>1000</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#e1a885</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_1100m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>1100</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#e19c85</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_farm_field_1200m</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>korkeus</ogc:PropertyName>
-              <ogc:Literal>1200</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#e18f85</CssParameter>
+              <CssParameter name="fill">
+                <ogc:Function name="Recode">
+                  <ogc:PropertyName>korkeus</ogc:PropertyName>
+
+                  <ogc:Literal>0</ogc:Literal>
+                  <ogc:Literal>#bff5a3</ogc:Literal>
+
+                  <ogc:Literal>100</ogc:Literal>
+                  <ogc:Literal>#caf5a3</ogc:Literal>
+
+                  <ogc:Literal>200</ogc:Literal>
+                  <ogc:Literal>#d4f5a3</ogc:Literal>
+
+                  <ogc:Literal>300</ogc:Literal>
+                  <ogc:Literal>#dff5a3</ogc:Literal>
+
+                  <ogc:Literal>400</ogc:Literal>
+                  <ogc:Literal>#e9f5a3</ogc:Literal>
+
+                  <ogc:Literal>500</ogc:Literal>
+                  <ogc:Literal>#f4f5a3</ogc:Literal>
+
+                  <ogc:Literal>600</ogc:Literal>
+                  <ogc:Literal>#f5eca3</ogc:Literal>
+
+                  <ogc:Literal>700</ogc:Literal>
+                  <ogc:Literal>#f5e2a3</ogc:Literal>
+
+                  <ogc:Literal>800</ogc:Literal>
+                  <ogc:Literal>#f5d7a3</ogc:Literal>
+
+                  <ogc:Literal>900</ogc:Literal>
+                  <ogc:Literal>#f5cca3</ogc:Literal>
+
+                  <ogc:Literal>1000</ogc:Literal>
+                  <ogc:Literal>#f5c3a3</ogc:Literal>
+
+                  <ogc:Literal>1100</ogc:Literal>
+                  <ogc:Literal>#f5b8a3</ogc:Literal>
+
+                  <ogc:Literal>1200</ogc:Literal>
+                  <ogc:Literal>#f5ada3</ogc:Literal>
+
+                </ogc:Function>
+              </CssParameter>
             </Fill>
           </PolygonSymbolizer>
         </Rule>
@@ -222,4 +68,3 @@
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
-
