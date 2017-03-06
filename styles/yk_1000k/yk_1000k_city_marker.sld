@@ -14,6 +14,9 @@
           <Name>yk_city_marker</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>
           <MaxScaleDenominator>2000000</MaxScaleDenominator>
+          <!--
+            No filter needed, values 2-7 and all shown
+          -->
           <PointSymbolizer>
             <Graphic>
               <Mark>
