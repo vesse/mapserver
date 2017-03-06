@@ -11,7 +11,7 @@
       <Title>Yleiskartta urban area 1000k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_farm_field</Name>
+          <Name>yk_urban_area</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>
           <MaxScaleDenominator>2000000</MaxScaleDenominator>
           <PolygonSymbolizer>

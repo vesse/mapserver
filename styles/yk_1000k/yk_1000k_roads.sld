@@ -10,6 +10,7 @@
     <UserStyle>
       <Title>Yleiskartta roads 1000k</Title>
       <FeatureTypeStyle>
+        <!-- Index OK, created for kohdeluokk -->
         <Rule>
           <Name>yk_road</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>
@@ -80,7 +81,7 @@
         </Rule>
 
         <Rule>
-          <Name>yk_water_way</Name>
+          <Name>yk_small_road</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>
           <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <ogc:Filter>

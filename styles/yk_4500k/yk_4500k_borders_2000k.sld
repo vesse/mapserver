@@ -10,7 +10,7 @@
     <UserStyle>
       <Title>Yleiskartta borders 2000k</Title>
       <FeatureTypeStyle>
-
+        <!-- Index OK, created for kohdeluokk -->
         <!-- Separate rule for dashed line because it is not supported
              with function -->
         <Rule>

@@ -8,6 +8,7 @@
   <NamedLayer>
     <Name>Yleiskartta city marker 2000k</Name>
     <UserStyle>
+      <!-- Index OK, created for asukasluok -->
       <Title>Yleiskartta city marker 2000k</Title>
       <FeatureTypeStyle>
         <Rule>

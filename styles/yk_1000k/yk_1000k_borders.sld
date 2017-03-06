@@ -10,7 +10,7 @@
     <UserStyle>
       <Title>Yleiskartta borders 1000k</Title>
       <FeatureTypeStyle>
-
+        <!-- Index OK, created for kohdeluokk -->
         <Rule>
           <Name>yk_country_border_water</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>

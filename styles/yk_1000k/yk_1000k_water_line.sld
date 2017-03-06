@@ -10,6 +10,7 @@
     <UserStyle>
       <Title>Yleiskartta water line 1000k</Title>
       <FeatureTypeStyle>
+        <!-- Index OK, created for kohdeluokk -->
         <Rule>
           <Name>yk_water_line</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>

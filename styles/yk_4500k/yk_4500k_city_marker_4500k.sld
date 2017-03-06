@@ -10,6 +10,7 @@
     <UserStyle>
       <Title>Yleiskartta city marker 4500k</Title>
       <FeatureTypeStyle>
+        <!-- Index OK, created for asukasluok -->
         <Rule>
           <Name>yk_city_marker</Name>
           <MinScaleDenominator>4000000</MinScaleDenominator>

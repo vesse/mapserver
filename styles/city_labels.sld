@@ -10,7 +10,7 @@
     <UserStyle>
       <Title>Paikannimi</Title>
       <FeatureTypeStyle>
-
+        <!-- Index OK, created on mittakaavarelevanssikoodi -->
         <Rule>
           <Name>city_labels_8000k</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
