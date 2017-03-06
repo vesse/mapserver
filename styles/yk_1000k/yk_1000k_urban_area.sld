@@ -6,9 +6,9 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta farm field 1000k</Name>
+    <Name>Yleiskartta urban area 1000k</Name>
     <UserStyle>
-      <Title>Yleiskartta farm field 1000k</Title>
+      <Title>Yleiskartta urban area 1000k</Title>
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_farm_field</Name>
@@ -16,7 +16,7 @@
           <MaxScaleDenominator>2000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#fff9b3</CssParameter>
+              <CssParameter name="fill">#eaeaea</CssParameter>
             </Fill>
           </PolygonSymbolizer>
         </Rule>
