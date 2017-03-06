@@ -13,7 +13,7 @@
         <Rule>
           <Name>yk_elevation</Name>
           <MinScaleDenominator>2000000</MinScaleDenominator>
-          <MaxScaleDenominator>17000000</MaxScaleDenominator>
+          <MaxScaleDenominator>40000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">

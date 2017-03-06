@@ -6,43 +6,14 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta city marker 2000k</Name>
+    <Name>Yleiskartta city marker 1000k</Name>
     <UserStyle>
-      <Title>Yleiskartta city marker 2000k</Title>
+      <Title>Yleiskartta city marker 1000k</Title>
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_city_marker</Name>
-          <MinScaleDenominator>2000000</MinScaleDenominator>
-          <MaxScaleDenominator>4000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>asukasluok</ogc:PropertyName>
-                <!-- Over 100k population -->
-                <ogc:Literal>7</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>asukasluok</ogc:PropertyName>
-                <!-- 50k-100k population -->
-                <ogc:Literal>6</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>asukasluok</ogc:PropertyName>
-                <!-- 20k-50k population -->
-                <ogc:Literal>5</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>asukasluok</ogc:PropertyName>
-                <!-- 5k-20k population -->
-                <ogc:Literal>4</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>asukasluok</ogc:PropertyName>
-                <!-- 1k-5k population -->
-                <ogc:Literal>3</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
-          </ogc:Filter>
+          <MinScaleDenominator>500000</MinScaleDenominator>
+          <MaxScaleDenominator>2000000</MaxScaleDenominator>
           <PointSymbolizer>
             <Graphic>
               <Mark>
@@ -63,6 +34,9 @@
                     <ogc:Literal>circle</ogc:Literal>
 
                     <ogc:Literal>3</ogc:Literal>
+                    <ogc:Literal>circle</ogc:Literal>
+
+                    <ogc:Literal>2</ogc:Literal>
                     <ogc:Literal>circle</ogc:Literal>
                   </ogc:Function>
                 </WellKnownName>
@@ -85,6 +59,9 @@
 
                       <ogc:Literal>3</ogc:Literal>
                       <ogc:Literal>#ebebeb</ogc:Literal>
+
+                      <ogc:Literal>2</ogc:Literal>
+                      <ogc:Literal>#ebebeb</ogc:Literal>
                     </ogc:Function>
                   </CssParameter>
                 </Fill>
@@ -100,19 +77,22 @@
                   <ogc:PropertyName>asukasluok</ogc:PropertyName>
 
                   <ogc:Literal>7</ogc:Literal>
-                  <ogc:Literal>8</ogc:Literal>
+                  <ogc:Literal>9</ogc:Literal>
 
                   <ogc:Literal>6</ogc:Literal>
-                  <ogc:Literal>8</ogc:Literal>
+                  <ogc:Literal>9</ogc:Literal>
 
                   <ogc:Literal>5</ogc:Literal>
+                  <ogc:Literal>7</ogc:Literal>
+
+                  <ogc:Literal>4</ogc:Literal>
                   <ogc:Literal>6</ogc:Literal>
 
-                  <ogc:Literal>4</ogc:Literal>
-                  <ogc:Literal>4</ogc:Literal>
-
                   <ogc:Literal>3</ogc:Literal>
-                  <ogc:Literal>4</ogc:Literal>
+                  <ogc:Literal>5</ogc:Literal>
+
+                  <ogc:Literal>2</ogc:Literal>
+                  <ogc:Literal>3</ogc:Literal>
                 </ogc:Function>
               </Size>
             </Graphic>
@@ -134,6 +114,9 @@
 
                 <ogc:Literal>3</ogc:Literal>
                 <ogc:Literal>50</ogc:Literal>
+
+                <ogc:Literal>3</ogc:Literal>
+                <ogc:Literal>30</ogc:Literal>
               </ogc:Function>
             </Priority>
           </PointSymbolizer>

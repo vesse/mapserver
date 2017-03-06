@@ -14,7 +14,8 @@ JSON="
         \"yk:1000k:peltoalue\",
         \"yk:1000k:vesiviiva\",
         \"yk:1000k:tieviiva\",
-        \"yk:1000k:hallintoalueraja\"
+        \"yk:1000k:hallintoalueraja\",
+        \"yk:1000k:taajamapiste\"
       ]
     },
     \"styles\": {
@@ -24,7 +25,8 @@ JSON="
         \"yk:1000k:farmfield\",
         \"yk:1000k:water_line\",
         \"yk:1000k:roads\",
-        \"yk:1000k:borders\"
+        \"yk:1000k:borders\",
+        \"yk:1000k:city_marker\"
       ]
     }
   }

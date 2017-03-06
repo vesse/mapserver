@@ -11,22 +11,60 @@
       <Title>Yleiskartta city marker 4500k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_city_marker_big</Name>
+          <Name>yk_city_marker</Name>
           <MinScaleDenominator>4000000</MinScaleDenominator>
           <MaxScaleDenominator>8000000</MaxScaleDenominator>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>asukasluok</ogc:PropertyName>
-              <!-- Over 100k population -->
-              <ogc:Literal>7</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>asukasluok</ogc:PropertyName>
+                <!-- Over 100k population -->
+                <ogc:Literal>7</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>asukasluok</ogc:PropertyName>
+                <!-- 50k-100k population -->
+                <ogc:Literal>6</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>asukasluok</ogc:PropertyName>
+                <!-- 20k-50k population -->
+                <ogc:Literal>5</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
           </ogc:Filter>
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>square</WellKnownName>
+                <WellKnownName>
+                  <ogc:Function name="Recode">
+                    <ogc:PropertyName>asukasluok</ogc:PropertyName>
+
+                    <ogc:Literal>7</ogc:Literal>
+                    <ogc:Literal>square</ogc:Literal>
+
+                    <ogc:Literal>6</ogc:Literal>
+                    <ogc:Literal>circle</ogc:Literal>
+
+                    <ogc:Literal>5</ogc:Literal>
+                    <ogc:Literal>circle</ogc:Literal>
+                  </ogc:Function>
+                </WellKnownName>
                 <Fill>
-                  <CssParameter name="fill">#c7c7c7</CssParameter>
+                  <CssParameter name="fill">
+                    <ogc:Function name="Recode">
+                      <ogc:PropertyName>asukasluok</ogc:PropertyName>
+
+                      <ogc:Literal>7</ogc:Literal>
+                      <ogc:Literal>#c7c7c7</ogc:Literal>
+
+                      <ogc:Literal>6</ogc:Literal>
+                      <ogc:Literal>#ebebeb</ogc:Literal>
+
+                      <ogc:Literal>5</ogc:Literal>
+                      <ogc:Literal>#ebebeb</ogc:Literal>
+                    </ogc:Function>
+                  </CssParameter>
                 </Fill>
                 <Stroke>
                   <CssParameter name="stroke">#5c5c5c</CssParameter>
@@ -35,67 +73,35 @@
                   <CssParameter name="stroke-linecap">square</CssParameter>
                 </Stroke>
               </Mark>
-              <Size>8</Size>
+              <Size>
+                <ogc:Function name="Recode">
+                  <ogc:PropertyName>asukasluok</ogc:PropertyName>
+
+                  <ogc:Literal>7</ogc:Literal>
+                  <ogc:Literal>8</ogc:Literal>
+
+                  <ogc:Literal>6</ogc:Literal>
+                  <ogc:Literal>6</ogc:Literal>
+
+                  <ogc:Literal>5</ogc:Literal>
+                  <ogc:Literal>4</ogc:Literal>
+                </ogc:Function>
+              </Size>
             </Graphic>
-            <Priority>1000</Priority>
-          </PointSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_city_marker_middle</Name>
-          <MinScaleDenominator>4000000</MinScaleDenominator>
-          <MaxScaleDenominator>8000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>asukasluok</ogc:PropertyName>
-              <!-- 50k-100k population -->
-              <ogc:Literal>6</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#ebebeb</CssParameter>
-                </Fill>
-                <Stroke>
-                  <CssParameter name="stroke">#5c5c5c</CssParameter>
-                  <CssParameter name="stroke-width">1</CssParameter>
-                  <CssParameter name="stroke-linejoin">bevel</CssParameter>
-                  <CssParameter name="stroke-linecap">square</CssParameter>
-                </Stroke>
-              </Mark>
-              <Size>6</Size>
-            </Graphic>
-          </PointSymbolizer>
-        </Rule>
-        <Rule>
-          <Name>yk_city_marker_small</Name>
-          <MinScaleDenominator>4000000</MinScaleDenominator>
-          <MaxScaleDenominator>8000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>asukasluok</ogc:PropertyName>
-              <!-- 20k-50k population -->
-              <ogc:Literal>5</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#ebebeb</CssParameter>
-                </Fill>
-                <Stroke>
-                  <CssParameter name="stroke">#5c5c5c</CssParameter>
-                  <CssParameter name="stroke-width">1</CssParameter>
-                  <CssParameter name="stroke-linejoin">bevel</CssParameter>
-                  <CssParameter name="stroke-linecap">square</CssParameter>
-                </Stroke>
-              </Mark>
-              <Size>4</Size>
-            </Graphic>
+            <Priority>
+              <ogc:Function name="Recode">
+                <ogc:PropertyName>asukasluok</ogc:PropertyName>
+
+                <ogc:Literal>7</ogc:Literal>
+                <ogc:Literal>950</ogc:Literal>
+
+                <ogc:Literal>6</ogc:Literal>
+                <ogc:Literal>450</ogc:Literal>
+
+                <ogc:Literal>5</ogc:Literal>
+                <ogc:Literal>250</ogc:Literal>
+              </ogc:Function>
+            </Priority>
           </PointSymbolizer>
         </Rule>
       </FeatureTypeStyle>
