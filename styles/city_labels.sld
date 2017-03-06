@@ -55,7 +55,7 @@
         </Rule>
 
         <Rule>
-          <Name>city_labels_4000k_big_cities</Name>
+          <Name>city_labels_4000k</Name>
           <MinScaleDenominator>4000000</MinScaleDenominator>
           <MaxScaleDenominator>8000000</MaxScaleDenominator>
           <ogc:Filter>
@@ -98,14 +98,20 @@
         </Rule>
 
         <Rule>
-          <Name>city_labels_2000k_big_cities</Name>
+          <Name>city_labels_2000k</Name>
           <MinScaleDenominator>2000000</MinScaleDenominator>
           <MaxScaleDenominator>4000000</MaxScaleDenominator>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
-              <ogc:Literal>8000000</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+                <ogc:Literal>8000000</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+                <ogc:Literal>4500000</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
           </ogc:Filter>
           <TextSymbolizer>
             <Label>
@@ -113,7 +119,17 @@
             </Label>
             <Font>
               <CssParameter name="font-family">Open Sans</CssParameter>
-              <CssParameter name="font-size">18</CssParameter>
+              <CssParameter name="font-size">
+                <ogc:Function name="Recode">
+                  <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+
+                  <ogc:Literal>8000000</ogc:Literal>
+                  <ogc:Literal>18</ogc:Literal>
+
+                  <ogc:Literal>4500000</ogc:Literal>
+                  <ogc:Literal>14</ogc:Literal>
+                </ogc:Function>
+              </CssParameter>
               <CssParameter name="font-style">normal</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
@@ -134,64 +150,41 @@
             </Fill>
             <Halo>
             </Halo>
-            <Priority>1000</Priority>
+            <Priority>
+              <ogc:Function name="Recode">
+                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+
+                <ogc:Literal>8000000</ogc:Literal>
+                <ogc:Literal>1000</ogc:Literal>
+
+                <ogc:Literal>4500000</ogc:Literal>
+                <ogc:Literal>500</ogc:Literal>
+              </ogc:Function>
+            </Priority>
             <VendorOption name="group">yes</VendorOption>
             <VendorOption name="spaceAround">5</VendorOption>
           </TextSymbolizer>
         </Rule>
 
         <Rule>
-          <Name>city_labels_2000k_medium_cities</Name>
-          <MinScaleDenominator>2000000</MinScaleDenominator>
-          <MaxScaleDenominator>4000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
-              <ogc:Literal>4500000</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <TextSymbolizer>
-            <Label>
-              <ogc:PropertyName>kirjoitusasu</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Open Sans</CssParameter>
-              <CssParameter name="font-size">14</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>0</DisplacementX>
-                  <DisplacementY>5</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Fill>
-              <CssParameter name="fill">#333333</CssParameter>
-            </Fill>
-            <Halo>
-            </Halo>
-            <Priority>500</Priority>
-            <VendorOption name="group">yes</VendorOption>
-            <VendorOption name="spaceAround">5</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-
-        <Rule>
-          <Name>city_labels_1000k_big_cities</Name>
+          <Name>city_labels_1000k</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>
           <MaxScaleDenominator>2000000</MaxScaleDenominator>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
-              <ogc:Literal>8000000</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+                <ogc:Literal>8000000</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+                <ogc:Literal>4500000</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+                <ogc:Literal>2000000</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Or>
           </ogc:Filter>
           <TextSymbolizer>
             <Label>
@@ -199,93 +192,20 @@
             </Label>
             <Font>
               <CssParameter name="font-family">Open Sans</CssParameter>
-              <CssParameter name="font-size">18</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>0</DisplacementX>
-                  <DisplacementY>5</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Fill>
-              <CssParameter name="fill">#333333</CssParameter>
-            </Fill>
-            <Halo>
-            </Halo>
-            <Priority>1000</Priority>
-            <VendorOption name="group">yes</VendorOption>
-            <VendorOption name="spaceAround">5</VendorOption>
-          </TextSymbolizer>
-        </Rule>
+              <CssParameter name="font-size">
+                <ogc:Function name="Recode">
+                  <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
 
-        <Rule>
-          <Name>city_labels_1000k_medium_cities</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
-              <ogc:Literal>4500000</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <TextSymbolizer>
-            <Label>
-              <ogc:PropertyName>kirjoitusasu</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Open Sans</CssParameter>
-              <CssParameter name="font-size">14</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>0</DisplacementX>
-                  <DisplacementY>5</DisplacementY>
-                </Displacement>
-              </PointPlacement>
-            </LabelPlacement>
-            <Fill>
-              <CssParameter name="fill">#333333</CssParameter>
-            </Fill>
-            <Halo>
-            </Halo>
-            <Priority>500</Priority>
-            <VendorOption name="group">yes</VendorOption>
-            <VendorOption name="spaceAround">5</VendorOption>
-          </TextSymbolizer>
-        </Rule>
+                  <ogc:Literal>8000000</ogc:Literal>
+                  <ogc:Literal>18</ogc:Literal>
 
-        <Rule>
-          <Name>city_labels_1000k_small_cities</Name>
-          <MinScaleDenominator>500000</MinScaleDenominator>
-          <MaxScaleDenominator>2000000</MaxScaleDenominator>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
-              <ogc:Literal>2000000</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <TextSymbolizer>
-            <Label>
-              <ogc:PropertyName>kirjoitusasu</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">Open Sans</CssParameter>
-              <CssParameter name="font-size">12</CssParameter>
+                  <ogc:Literal>4500000</ogc:Literal>
+                  <ogc:Literal>14</ogc:Literal>
+
+                  <ogc:Literal>2000000</ogc:Literal>
+                  <ogc:Literal>12</ogc:Literal>
+                </ogc:Function>
+              </CssParameter>
               <CssParameter name="font-style">normal</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
@@ -306,7 +226,20 @@
             </Fill>
             <Halo>
             </Halo>
-            <Priority>300</Priority>
+            <Priority>
+              <ogc:Function name="Recode">
+                <ogc:PropertyName>mittakaavarelevanssikoodi</ogc:PropertyName>
+
+                <ogc:Literal>8000000</ogc:Literal>
+                <ogc:Literal>1000</ogc:Literal>
+
+                <ogc:Literal>4500000</ogc:Literal>
+                <ogc:Literal>500</ogc:Literal>
+
+                <ogc:Literal>2000000</ogc:Literal>
+                <ogc:Literal>300</ogc:Literal>
+              </ogc:Function>
+            </Priority>
             <VendorOption name="group">yes</VendorOption>
             <VendorOption name="spaceAround">5</VendorOption>
           </TextSymbolizer>
