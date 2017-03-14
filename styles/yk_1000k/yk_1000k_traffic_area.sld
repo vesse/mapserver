@@ -6,17 +6,17 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta urban area 1000k</Name>
+    <Name>Yleiskartta traffic area 1000k</Name>
     <UserStyle>
-      <Title>Yleiskartta urban area 1000k</Title>
+      <Title>Yleiskartta traffic area 1000k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_urban_area</Name>
+          <Name>yk_traffic_area</Name>
           <MinScaleDenominator>500000</MinScaleDenominator>
           <MaxScaleDenominator>2000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#f0ede5</CssParameter>
+              <CssParameter name="fill">#eaeaea</CssParameter>
             </Fill>
           </PolygonSymbolizer>
         </Rule>

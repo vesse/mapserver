@@ -34,9 +34,15 @@ Installing Java Advanced Imaging API is optional but [recommended](http://docs.g
 wget http://data.opengeo.org/suite/jai/jai-1_1_3-lib-linux-amd64-jdk.bin
 wget http://data.opengeo.org/suite/jai/jai_imageio-1_1-lib-linux-amd64-jdk.bin
 chmod u+x jai*
+export JAIDIR=`pwd`
 pushd $JAVA_HOME
-sudo <path to jai>/jai-1_1_3-lib-linux-amd64-jdk.bin
-sudo _POSIX2_VERSION=199209 <path to jai>jai_imageio-1_1-lib-linux-amd64-jdk.bin
+sudo $JAIDIR/jai-1_1_3-lib-linux-amd64-jdk.bin
+sudo _POSIX2_VERSION=199209 $JAIDIR/jai_imageio-1_1-lib-linux-amd64-jdk.bin
 popd
 rm geoserver/webapps/geoserver/WEB-INF/lib/jai_*
 ```
+
+## TODO
+
+- Convert styles to YSLD and use the YSLD extension
+- Airport icons (lentokenttapiste is imported but not used now)

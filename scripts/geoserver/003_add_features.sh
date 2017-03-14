@@ -20,7 +20,6 @@ features['yk:4500k:vesiviiva8000']='yk_4500k_vesiviiva8000'
 
 features['yk:1000k:hallintoalueraja']='yk_1000k_hallintoalueraja'
 features['yk:1000k:korkeusalue']='yk_1000k_korkeusalue'
-features['yk:1000k:maaalue']='yk_1000k_maaalue'
 features['yk:1000k:liikennealue']='yk_1000k_liikennealue'
 features['yk:1000k:peltoalue']='yk_1000k_peltoalue'
 features['yk:1000k:rautatieviiva']='yk_1000k_rautatieviiva'

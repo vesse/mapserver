@@ -24,7 +24,6 @@ files4500k=(
 files1000k=(
   HallintoalueRaja.shp
   KorkeusAlue.shp
-  MaaAlue.shp
   LiikenneAlue.shp
   PeltoAlue.shp
   RautatieViiva.shp
@@ -33,6 +32,7 @@ files1000k=(
   TieViiva.shp
   VesiAlue.shp
   VesiViiva.shp
+  LentokenttaPiste.shp
 )
 
 echo "Import yleiskartta 4500k"
