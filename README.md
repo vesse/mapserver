@@ -6,11 +6,30 @@ Currently data is imported and styled to zoom in up to 1:545k scale, after that 
 
 ### Screen shots
 
-<a href="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_1M.png">
+<a href="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_9M.png">
   <img src="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_9M.png"
        height="200"
        alt="1:9M">
 </a>
+
+<a href="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_4M.png">
+  <img src="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_4M.png"
+       height="200"
+       alt="1:4M">
+</a>
+
+<a href="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_1M.png">
+  <img src="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_1M.png"
+       height="200"
+       alt="1:1M">
+</a>
+
+<a href="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_545k.png">
+  <img src="https://raw.githubusercontent.com/vesse/mapserver/master/screenshots/1_545k.png"
+       height="200"
+       alt="1:545k">
+</a>
+
 
 ## Requirements
 
