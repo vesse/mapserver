@@ -36,7 +36,7 @@ files1000k=(
 )
 
 echo "Import yleiskartta 4500k"
-importData "data/yleiskartta_4500k/unzipped" "yk_4500k" "" "${files4500k[@]}"
+importData "data/yleiskartta_4500k" "yk_4500k" "" "${files4500k[@]}"
 
 execSql 'CREATE INDEX yk_4500k_hallintoalueraja_kohdeluokk_idx ON yk_4500k_hallintoalueraja(kohdeluokk)'
 
@@ -45,10 +45,8 @@ execSql 'CREATE INDEX yk_4500k_taajamapiste4500_asukasluok_idx ON yk_4500k_taaja
 execSql 'CREATE INDEX yk_4500k_taajamapiste2000_asukasluok_idx ON yk_4500k_taajamapiste2000(asukasluok)'
 
 echo "Import yleiskartta 1000k"
-importData "data/yleiskartta_1000k/unzipped" "yk_1000k" "" "${files1000k[@]}"
+importData "data/yleiskartta_1000k" "yk_1000k" "" "${files1000k[@]}"
 
 execSql 'CREATE INDEX yk_1000k_hallintoalueraja_kohdeluokk_idx ON yk_1000k_hallintoalueraja(kohdeluokk)'
 execSql 'CREATE INDEX yk_1000k_vesiviiva_kohdeluokk_idx ON yk_1000k_vesiviiva(kohdeluokk)'
 execSql 'CREATE INDEX yk_1000k_tieviiva_tieluokka_idx ON yk_1000k_tieviiva(tieluokka)'
-execSql 'CREATE INDEX yk_1000k_maaalue_kohdeluokk_idx ON yk_1000k_maaalue(kohdeluokk)'
-
