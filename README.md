@@ -1,5 +1,13 @@
 # Finnish GeoServer map
 
+This is a work in progress and might stay as such for quite a while, but might be useful starting point at least if you need to setup GeoServer with data from National Land Survey of Finland (Maanmittauslaitos / MML in Finnish).
+
+Currently data is imported and styled to zoom in up to 1:545k scale, after that need to switch to Maastotietokanta which is not even started and requires to most amount of work in picking the relevant data and defining the styles.
+
+### Screen shots
+
+
+
 ## Requirements
 
 This has been developed on Ubuntu which I use for development so some dependencies are probably missing due to them already existing in my dev env. Java for one is obviously needed for GeoServer. I've used Java 8 when writing these.
