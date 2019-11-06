@@ -2,8 +2,10 @@
 
 ## Requirements
 
+This has been developed on Ubuntu which I use for development so some dependencies are probably missing due to them already existing in my dev env. Java for one is obviously needed for GeoServer. I've used Java 8 when writing these.
+
 ```bash
-sudo apt-get install postgresql postgis curl wget jq
+sudo apt-get install postgresql postgis curl wget jq gdal-bin
 ```
 
 ## Database
@@ -19,30 +21,48 @@ sudo su - postgres -c "echo CREATE extension IF NOT EXISTS postgis|psql finland"
 ## GeoServer
 
 ```bash
-wget http://sourceforge.net/projects/geoserver/files/GeoServer/2.10.2/geoserver-2.10.2-bin.zip
-unzip geoserver-2.10.2-bin.zip
-ln -s geoserver-2.10.2 geoserver
+wget http://sourceforge.net/projects/geoserver/files/GeoServer/2.16.0/geoserver-2.16.0-bin.zip
+unzip geoserver-2.16.0-bin.zip
+ln -s geoserver-2.16.0 geoserver
 cp fonts/* geoserver/data_dir/styles/
 GEOSERVER_HOME="$(pwd)/geoserver" geoserver/bin/startup.sh
 ```
 
-### JAI
+## Import data
 
-Installing Java Advanced Imaging API is optional but [recommended](http://docs.geoserver.org/latest/en/user/production/java.html). Linux binaries can be found from [here](http://data.opengeo.org/suite/jai/).
+Data import is done a bunch of scripts. Scripts are configured with values defined in `config` and you need to change at least `DATABASE_PASSWORD`. 
 
+### Get data
+
+```bash
+./scripts/data/get_paikannimet.sh
+./scripts/data/get_yleiskartta.sh
 ```
-wget http://data.opengeo.org/suite/jai/jai-1_1_3-lib-linux-amd64-jdk.bin
-wget http://data.opengeo.org/suite/jai/jai_imageio-1_1-lib-linux-amd64-jdk.bin
-chmod u+x jai*
-export JAIDIR=`pwd`
-pushd $JAVA_HOME
-sudo $JAIDIR/jai-1_1_3-lib-linux-amd64-jdk.bin
-sudo _POSIX2_VERSION=199209 $JAIDIR/jai_imageio-1_1-lib-linux-amd64-jdk.bin
-popd
-rm geoserver/webapps/geoserver/WEB-INF/lib/jai_*
+
+### Import to DB
+
+Import scripts do not necessarily import all available data but just those that I've found useful for this particular map. See the scripts if you wish to have more data imported. New styles for GeoServer are of course needed to have the data visible. Also, create indices for columns which are used for filtering with `ogc:Filter` in the styles.
+
+```bash
+./scripts/data/import_paikannimet.sh
+./scripts/data/import_yleiskartta.sh
 ```
+
+### Add layers to GeoServer
+
+The currently existing scripts for layer configrations are in `scripts/geoserver` and they're numbered in order of execution. Helper `./scripts/geoserver/run_all.sh` run them all, but do not that it **deletes existing workspaces and styles** so please don't run it against your production GeoServer.
+
+### Test
+
+1. Go to [http://localhost:8080/geoserver/](http://localhost:8080/geoserver/) 
+2. Login with GeoServer default credentials `admin` / `geoserver`
+3. Go to _Layer Preview_
+4. Look for _Finland_ and click open the _OpenLayers_ preview 
+5. Zoom and see how it works
 
 ## TODO
 
+- Create the last zoom levels from maastotietokanta
+- Switch road network to Digiroad
 - Convert styles to YSLD and use the YSLD extension
 - Airport icons (lentokenttapiste is imported but not used now)
