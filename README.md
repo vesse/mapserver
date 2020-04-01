@@ -61,7 +61,7 @@ GEOSERVER_HOME="$(pwd)/geoserver" geoserver/bin/startup.sh
 
 ## Import data
 
-Data import is done a bunch of scripts. Scripts are configured with values defined in `config` and you need to change at least `DATABASE_PASSWORD`. 
+Data import is done a bunch of scripts. Scripts are configured with values defined in `config` and you need to change at least `DATABASE_PASSWORD`.
 
 ### Get data
 
@@ -85,10 +85,10 @@ The currently existing scripts for layer configrations are in `scripts/geoserver
 
 ### Test
 
-1. Go to [http://localhost:8080/geoserver/](http://localhost:8080/geoserver/) 
+1. Go to [http://localhost:8080/geoserver/](http://localhost:8080/geoserver/)
 2. Login with GeoServer default credentials `admin` / `geoserver`
 3. Go to _Layer Preview_
-4. Look for _Finland_ and click open the _OpenLayers_ preview 
+4. Look for _Finland_ and click open the _OpenLayers_ preview
 5. Zoom and see how it works
 
 ## TODO
@@ -97,3 +97,4 @@ The currently existing scripts for layer configrations are in `scripts/geoserver
 - Switch road network to Digiroad
 - Convert styles to YSLD and use the YSLD extension
 - Airport icons (lentokenttapiste is imported but not used now)
+- Import only needed types for smaller DB size
