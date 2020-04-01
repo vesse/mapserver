@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source scripts/helpers.sh
-
 mkdir -p "data/yleiskartta_4500k"
 pushd "data/yleiskartta_4500k"
 wget http://kartat.kapsi.fi/files/yleiskartta_4500k/kaikki/etrs89/shape/4_5_milj_shape_etrs-tm35fin.zip
