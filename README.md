@@ -36,7 +36,7 @@ Currently data is imported and styled to zoom in up to 1:545k scale, after that 
 This has been developed on Ubuntu which I use for development so some dependencies are probably missing due to them already existing in my dev env. Java for one is obviously needed for GeoServer. I've used Java 8 when writing these.
 
 ```bash
-sudo apt-get install postgresql postgis curl wget jq gdal-bin
+sudo apt-get install postgresql postgis curl wget jq gdal-bin xmlstarlet
 ```
 
 ## Database
@@ -98,3 +98,4 @@ The currently existing scripts for layer configrations are in `scripts/geoserver
 - Convert styles to YSLD and use the YSLD extension
 - Airport icons (lentokenttapiste is imported but not used now)
 - Import only needed types for smaller DB size
+- Maybe check if maastokartta is enough? It is made from maastotietokanta after all.
