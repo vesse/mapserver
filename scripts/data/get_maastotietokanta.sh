@@ -24,4 +24,6 @@ while [ ! -z "${url}" ]; do
   url=`xml sel -N x="http://www.w3.org/2005/Atom" -t -v "//x:feed/x:link[@rel='next']/@href" ${tmp_file} | perl -MHTML::Entities -pe 'decode_entities($_);'`
 done
 
+rm ${tmp_file}
+
 popd
