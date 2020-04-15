@@ -13,20 +13,20 @@ JSON="
     \"title\": \"Finland:4500k\",
     \"layers\": {
       \"layer\": [
-        \"yk:4500k:vesiviiva4500\",
-        \"yk:4500k:tieviiva4500\",
-        \"yk:4500k:rautatieviiva\",
-        \"yk:4500k:hallintoalueraja\",
-        \"yk:4500k:taajamapiste4500\",
+        \"fin:yk:4500k:vesiviiva4500\",
+        \"fin:yk:4500k:tieviiva4500\",
+        \"fin:yk:4500k:rautatieviiva\",
+        \"fin:yk:4500k:hallintoalueraja\",
+        \"fin:yk:4500k:taajamapiste4500\",
       ]
     },
     \"styles\": {
       \"style\": [
-        \"yk:4500k:water_line_4500k\",
-        \"yk:4500k:roads_4500k\",
-        \"yk:4500k:railroads_4500k\",
-        \"yk:4500k:borders_4500k\",
-        \"yk:4500k:city_marker_4500k\",
+        \"fin:yk:4500k:water_line_4500k\",
+        \"fin:yk:4500k:roads_4500k\",
+        \"fin:yk:4500k:railroads_4500k\",
+        \"fin:yk:4500k:borders_4500k\",
+        \"fin:yk:4500k:city_marker_4500k\",
       ]
     }
   }

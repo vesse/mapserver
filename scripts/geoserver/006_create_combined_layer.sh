@@ -25,6 +25,10 @@ JSON="
         {
           \"@type\": \"layerGroup\",
           \"name\": \"${WORKSPACE_NAME}:Finland:1000k\"
+        },
+        {
+          \"@type\": \"layerGroup\",
+          \"name\": \"${WORKSPACE_NAME}:Finland:test\"
         }
       ]
     }

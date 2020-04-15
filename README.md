@@ -68,6 +68,7 @@ Data import is done a bunch of scripts. Scripts are configured with values defin
 ```bash
 ./scripts/data/get_paikannimet.sh
 ./scripts/data/get_yleiskartta.sh
+./scripts/data/get_digiroad.sh
 ```
 
 ### Import to DB
@@ -94,7 +95,7 @@ The currently existing scripts for layer configrations are in `scripts/geoserver
 ## TODO
 
 - Create the last zoom levels from maastotietokanta
-- Switch road network to Digiroad
+- European road numbers from Digiroad
 - Convert styles to YSLD and use the YSLD extension
 - Airport icons (lentokenttapiste is imported but not used now)
 - Import only needed types for smaller DB size

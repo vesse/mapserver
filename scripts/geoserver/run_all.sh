@@ -9,4 +9,5 @@ scripts/geoserver/005_create_8000k_layer.sh
 scripts/geoserver/005_create_4500k_layer.sh
 scripts/geoserver/005_create_2000k_layer.sh
 scripts/geoserver/005_create_1000k_layer.sh
+scripts/geoserver/005_create_test_layer.sh
 scripts/geoserver/006_create_combined_layer.sh
