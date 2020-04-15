@@ -14,6 +14,12 @@
           <Name>yk_road</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
           <MaxScaleDenominator>30000000</MaxScaleDenominator>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>toiminn_lk</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#CC8822</CssParameter>
