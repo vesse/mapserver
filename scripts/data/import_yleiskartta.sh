@@ -8,9 +8,9 @@ source scripts/helpers.sh
 files4500k=(
   HallintoalueRaja.shp
   RautatieViiva.shp
-  TieViiva8000.shp
-  TieViiva4500.shp
-  TieViiva2000.shp
+  # TieViiva8000.shp
+  # TieViiva4500.shp
+  # TieViiva2000.shp
   VesiAlue.shp
   VesiViiva8000.shp
   VesiViiva4500.shp
@@ -29,7 +29,7 @@ files1000k=(
   RautatieViiva.shp
   TaajamaAlue.shp
   TaajamaPiste.shp
-  TieViiva.shp
+  # TieViiva.shp
   VesiAlue.shp
   VesiViiva.shp
   LentokenttaPiste.shp
@@ -49,4 +49,4 @@ importData "data/yleiskartta_1000k" "yk_1000k" "" 0 "${files1000k[@]}"
 
 execSql 'CREATE INDEX yk_1000k_hallintoalueraja_kohdeluokk_idx ON yk_1000k_hallintoalueraja(kohdeluokk)'
 execSql 'CREATE INDEX yk_1000k_vesiviiva_kohdeluokk_idx ON yk_1000k_vesiviiva(kohdeluokk)'
-execSql 'CREATE INDEX yk_1000k_tieviiva_tieluokka_idx ON yk_1000k_tieviiva(tieluokka)'
+# execSql 'CREATE INDEX yk_1000k_tieviiva_tieluokka_idx ON yk_1000k_tieviiva(tieluokka)'
