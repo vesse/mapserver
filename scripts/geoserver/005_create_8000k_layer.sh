@@ -23,7 +23,7 @@ JSON="
         \"fin:yk:4500k:elevation\",
         \"fin:yk:4500k:water_area\",
         \"fin:yk:4500k:water_line_8000k\",
-        \"fin:yk:4500k:roads_8000k\",
+        \"fin:digiroad:8000k\",
         \"fin:yk:4500k:borders_8000k\",
         \"fin:yk:4500k:city_marker_8000k\",
         \"fin:city_labels\"

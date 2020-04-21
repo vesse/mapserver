@@ -92,6 +92,17 @@ The currently existing scripts for layer configrations are in `scripts/geoserver
 4. Look for _Finland_ and click open the _OpenLayers_ preview
 5. Zoom and see how it works
 
+## GeoServer setuo
+
+Styles are defined in folders per data source. Some of the styles are same on different layers but with different scale denominators. This is to allow control over the stacking order of the layers for each layer group. For example. road network source data is the same for each layer but if defined on the 8000k layer group only the road network might not be visible when zooming in because new sources are drawn on top of it.
+
+Defined layers are:
+
+* 500k - 2000k
+* 2000k - 4000k
+* 4000k - 8000k
+* 8000k -
+
 ## TODO
 
 - Create the last zoom levels from maastotietokanta

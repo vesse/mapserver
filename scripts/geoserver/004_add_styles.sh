@@ -4,27 +4,27 @@ source scripts/helpers.sh
 
 declare -A styles
 
-styles['fin:yk:4500k:roads_8000k']='yk_4500k/yk_4500k_roads_8000k.sld'
+# styles['fin:yk:4500k:roads_8000k']='yk_4500k/yk_4500k_roads_8000k.sld'
 # styles['fin:yk:4500k:roads_4500k']='yk_4500k/yk_4500k_roads_4500k.sld'
 # styles['fin:yk:4500k:roads_2000k']='yk_4500k/yk_4500k_roads_2000k.sld'
 
 styles['fin:yk:4500k:railroads_4500k']='yk_4500k/yk_4500k_railroads_4500k.sld'
 
 styles['fin:yk:4500k:water_line_8000k']='yk_4500k/yk_4500k_water_line_8000k.sld'
-styles['fin:yk:4500k:water_line_4500k']='yk_4500k/yk_4500k_water_line_4500k.sld'
+styles['fin:yk:4500k:water_line_4000k']='yk_4500k/yk_4500k_water_line_4000k.sld'
 styles['fin:yk:4500k:water_line_2000k']='yk_4500k/yk_4500k_water_line_2000k.sld'
 
 styles['fin:yk:4500k:city_marker_8000k']='yk_4500k/yk_4500k_city_marker_8000k.sld'
-styles['fin:yk:4500k:city_marker_4500k']='yk_4500k/yk_4500k_city_marker_4500k.sld'
+styles['fin:yk:4500k:city_marker_4000k']='yk_4500k/yk_4500k_city_marker_4000k.sld'
 styles['fin:yk:4500k:city_marker_2000k']='yk_4500k/yk_4500k_city_marker_2000k.sld'
 
 styles['fin:yk:4500k:borders_8000k']='yk_4500k/yk_4500k_borders_8000k.sld'
-styles['fin:yk:4500k:borders_4500k']='yk_4500k/yk_4500k_borders_4500k.sld'
+styles['fin:yk:4500k:borders_4000k']='yk_4500k/yk_4500k_borders_4000k.sld'
 styles['fin:yk:4500k:borders_2000k']='yk_4500k/yk_4500k_borders_2000k.sld'
 
+# TODO
 styles['fin:yk:4500k:water_area']='yk_4500k/yk_4500k_water_area.sld'
 styles['fin:yk:4500k:elevation']='yk_4500k/yk_4500k_elevation.sld'
-
 
 # styles['fin:yk:1000k:roads']='yk_1000k/yk_1000k_roads.sld'
 styles['fin:yk:1000k:water_line']='yk_1000k/yk_1000k_water_line.sld'
@@ -38,6 +38,12 @@ styles['fin:yk:1000k:city_marker']='yk_1000k/yk_1000k_city_marker.sld'
 
 styles['fin:city_labels']='city_labels.sld'
 
+styles['fin:digiroad:8000k']='digiroad/8000k.sld'
+styles['fin:digiroad:4000k']='digiroad/4000k.sld'
+styles['fin:digiroad:2000k']='digiroad/2000k.sld'
+styles['fin:digiroad:500k']='digiroad/500k.sld'
+
+# TODO
 styles['fin:maastotietokanta:polygons']='maastotietokanta/polygons.sld'
 
 function addStyle {
