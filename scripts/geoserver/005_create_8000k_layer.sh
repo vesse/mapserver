@@ -20,8 +20,8 @@ JSON="
     },
     \"styles\": {
       \"style\": [
-        \"fin:yk:4500k:elevation\",
-        \"fin:yk:4500k:water_area\",
+        \"fin:yk:4500k:elevation_8000k\",
+        \"fin:yk:4500k:water_area_8000k\",
         \"fin:yk:4500k:water_line_8000k\",
         \"fin:digiroad:8000k\",
         \"fin:yk:4500k:borders_8000k\",
@@ -36,3 +36,7 @@ JSON="
 echo "Add 8000k layer group"
 echo "  `postGeoserver "${JSON}" "rest/workspaces/${WORKSPACE_NAME}/layergroups"`"
 
+
+# Note: water area, borders and city labels are from 8000k layer since
+# there are not different scale data for those. City labels rise on top
+# apparently regardless of drawing order which is nice for reuse

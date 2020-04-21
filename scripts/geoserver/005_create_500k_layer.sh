@@ -5,8 +5,8 @@ source scripts/helpers.sh
 JSON="
 {
   \"layerGroup\": {
-    \"name\": \"Finland:1000k\",
-    \"title\": \"Finland:1000k\",
+    \"name\": \"Finland:500k\",
+    \"title\": \"Finland:500k\",
     \"layers\": {
       \"layer\": [
         \"fin:yk:1000k:korkeusalue\",
@@ -15,7 +15,7 @@ JSON="
         \"fin:yk:1000k:taajamaalue\",
         \"fin:yk:1000k:liikennealue\",
         \"fin:yk:1000k:vesiviiva\",
-        \"fin:yk:1000k:tieviiva\",
+        \"fin:digiroad\",
         \"fin:yk:1000k:hallintoalueraja\",
         \"fin:yk:1000k:taajamapiste\"
       ]
@@ -28,7 +28,7 @@ JSON="
         \"fin:yk:1000k:urban_area\",
         \"fin:yk:1000k:traffic_area\",
         \"fin:yk:1000k:water_line\",
-        \"fin:yk:1000k:roads\",
+        \"fin:digiroad:500k\",
         \"fin:yk:1000k:borders\",
         \"fin:yk:1000k:city_marker\"
       ]

@@ -22,9 +22,13 @@ styles['fin:yk:4500k:borders_8000k']='yk_4500k/yk_4500k_borders_8000k.sld'
 styles['fin:yk:4500k:borders_4000k']='yk_4500k/yk_4500k_borders_4000k.sld'
 styles['fin:yk:4500k:borders_2000k']='yk_4500k/yk_4500k_borders_2000k.sld'
 
-# TODO
-styles['fin:yk:4500k:water_area']='yk_4500k/yk_4500k_water_area.sld'
-styles['fin:yk:4500k:elevation']='yk_4500k/yk_4500k_elevation.sld'
+styles['fin:yk:4500k:water_area_8000k']='yk_4500k/yk_4500k_water_area_8000k.sld'
+styles['fin:yk:4500k:water_area_4000k']='yk_4500k/yk_4500k_water_area_4000k.sld'
+styles['fin:yk:4500k:water_area_2000k']='yk_4500k/yk_4500k_water_area_2000k.sld'
+
+styles['fin:yk:4500k:elevation_8000k']='yk_4500k/yk_4500k_elevation_8000k.sld'
+styles['fin:yk:4500k:elevation_4000k']='yk_4500k/yk_4500k_elevation_4000k.sld'
+styles['fin:yk:4500k:elevation_2000k']='yk_4500k/yk_4500k_elevation_2000k.sld'
 
 # styles['fin:yk:1000k:roads']='yk_1000k/yk_1000k_roads.sld'
 styles['fin:yk:1000k:water_line']='yk_1000k/yk_1000k_water_line.sld'

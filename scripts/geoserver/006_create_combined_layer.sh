@@ -16,7 +16,7 @@ JSON="
         },
         {
           \"@type\": \"layerGroup\",
-          \"name\": \"${WORKSPACE_NAME}:Finland:4500k\"
+          \"name\": \"${WORKSPACE_NAME}:Finland:4000k\"
         },
         {
           \"@type\": \"layerGroup\",
@@ -24,7 +24,7 @@ JSON="
         },
         {
           \"@type\": \"layerGroup\",
-          \"name\": \"${WORKSPACE_NAME}:Finland:1000k\"
+          \"name\": \"${WORKSPACE_NAME}:Finland:500k\"
         },
         {
           \"@type\": \"layerGroup\",

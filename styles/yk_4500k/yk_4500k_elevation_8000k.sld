@@ -6,12 +6,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta elevation 4500k</Name>
+    <Name>Yleiskartta elevation 8000k</Name>
     <UserStyle>
-      <Title>Yleiskartta elevation 4500k</Title>
+      <Title>Yleiskartta elevation 8000k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_elevation</Name>
+          <Name>yk_elevation_8000k</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
           <MaxScaleDenominator>40000000</MaxScaleDenominator>
           <PolygonSymbolizer>

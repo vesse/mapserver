@@ -9,12 +9,14 @@ source scripts/helpers.sh
 JSON="
 {
   \"layerGroup\": {
-    \"name\": \"Finland:4500k\",
-    \"title\": \"Finland:4500k\",
+    \"name\": \"Finland:4000k\",
+    \"title\": \"Finland:4000k\",
     \"layers\": {
       \"layer\": [
+        \"fin:yk:4500k:korkeusalue\",
+        \"fin:yk:4500k:vesialue\",
         \"fin:yk:4500k:vesiviiva4500\",
-        \"fin:yk:4500k:tieviiva4500\",
+        \"fin:digiroad\",
         \"fin:yk:4500k:rautatieviiva\",
         \"fin:yk:4500k:hallintoalueraja\",
         \"fin:yk:4500k:taajamapiste4500\",
@@ -22,11 +24,13 @@ JSON="
     },
     \"styles\": {
       \"style\": [
-        \"fin:yk:4500k:water_line_4500k\",
-        \"fin:yk:4500k:roads_4500k\",
+        \"fin:yk:4500k:elevation_4000k\",
+        \"fin:yk:4500k:water_area_4000k\",
+        \"fin:yk:4500k:water_line_4000k\",
+        \"fin:digiroad:4000k\",
         \"fin:yk:4500k:railroads_4500k\",
-        \"fin:yk:4500k:borders_4500k\",
-        \"fin:yk:4500k:city_marker_4500k\",
+        \"fin:yk:4500k:borders_4000k\",
+        \"fin:yk:4500k:city_marker_4000k\",
       ]
     }
   }

@@ -6,9 +6,9 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
   <NamedLayer>
-    <Name>Yleiskartta borders 4500k</Name>
+    <Name>Yleiskartta borders 4000k</Name>
     <UserStyle>
-      <Title>Yleiskartta borders 4500k</Title>
+      <Title>Yleiskartta borders 4000k</Title>
       <FeatureTypeStyle>
         <!-- Index OK, created for kohdeluokk -->
         <!-- Separate rule for dashed line because it is not supported

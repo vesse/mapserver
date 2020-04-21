@@ -14,14 +14,20 @@ JSON="
     \"title\": \"Finland:2000k\",
     \"layers\": {
       \"layer\": [
+        \"fin:yk:4500k:korkeusalue\",
+        \"fin:yk:4500k:vesialue\",
         \"fin:yk:4500k:vesiviiva2000\",
+        \"fin:digiroad\",
         \"fin:yk:4500k:hallintoalueraja\",
         \"fin:yk:4500k:taajamapiste2000\"
       ]
     },
     \"styles\": {
       \"style\": [
+        \"fin:yk:4500k:elevation_2000k\",
+        \"fin:yk:4500k:water_area_2000k\",
         \"fin:yk:4500k:water_line_2000k\",
+        \"fin:digiroad:2000k\",
         \"fin:yk:4500k:borders_2000k\",
         \"fin:yk:4500k:city_marker_2000k\",
       ]

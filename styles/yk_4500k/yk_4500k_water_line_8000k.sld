@@ -11,7 +11,7 @@
       <Title>Yleiskartta water line 8000k</Title>
       <FeatureTypeStyle>
         <Rule>
-          <Name>yk_water_line</Name>
+          <Name>yk_water_line_8000k</Name>
           <MinScaleDenominator>8000000</MinScaleDenominator>
           <LineSymbolizer>
             <Stroke>
