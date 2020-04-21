@@ -12,7 +12,7 @@
       <FeatureTypeStyle>
         <Rule>
           <Name>yk_elevation</Name>
-          <MinScaleDenominator>2000000</MinScaleDenominator>
+          <MinScaleDenominator>8000000</MinScaleDenominator>
           <MaxScaleDenominator>40000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
